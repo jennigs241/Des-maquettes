@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+nav button {
+    width: 260px;
+    height: 52px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+
+section.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 40px;
+}
+
+section.hero h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section.hero p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+section.hero button {
+    margin-top: 10px;
+    width: 260px;
+    height: 52px;
+    font-weight: 600;
+}
+
+
+section.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    margin: 80px 0;
+}
+
+section.stats div {
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+
+section.stats div h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section.stats div p {
+    font-size: 12px;
+    color: #555555;
+}
+
+
+section.formations {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+section.formations h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.formations p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+section.formations .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+section.formations .card {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+section.projets {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section.projets h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.projets p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+section.projets .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+section.projets .card {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+section.temoignages {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section.temoignages h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section.temoignages blockquote {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    display: inline-block;
+    max-width: 700px;
+    font-size: 16px;
+    color: #555555;
+}
+
+
+section.cta {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section.cta button {
+    width: 260px;
+    height: 52px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+}
+
+
+footer {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 12px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555555;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #000000;
+}
+
+
+@media (max-width: 1024px) {
+    section.hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.formations .card-container,
+    section.projets .card-container {
+        grid-template-columns: 1fr;
+    }
+}
